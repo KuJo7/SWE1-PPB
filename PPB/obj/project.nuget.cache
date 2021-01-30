@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "LnYnJ/PiBvfpbD5tjPh9ao+uqIXOfN4xW18QExrYB5jDwWofYQjYEDrq3+xAK7XhzYc+a+aqD1gohRMUh3NBcA==",
+  "dgSpecHash": "ZPuXxDkn03a3YqL94dWHWOVJw1EpG62rlWXcfN7Wb1YTYDxKoIJwndlclED8/s6JjL+E/MkwZOz/ZnKqRhsaBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\joelk\\OneDrive - FH Technikum Wien\\Dokumente\\BIF\\Sem_3\\SWE\\SWE1-PPB\\PPB\\PPB.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\joelk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

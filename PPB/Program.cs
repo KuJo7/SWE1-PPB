@@ -4,9 +4,10 @@ namespace PPB
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello World!");
+            PPB ppb = new PPB();
+            ppb.Run();
         }
     }
 }
