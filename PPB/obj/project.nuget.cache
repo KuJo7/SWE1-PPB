@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ZPuXxDkn03a3YqL94dWHWOVJw1EpG62rlWXcfN7Wb1YTYDxKoIJwndlclED8/s6JjL+E/MkwZOz/ZnKqRhsaBA==",
+  "dgSpecHash": "XcSV+s5lITu9TmF7uRd0cQaFkD42ErKS7c3DzG+L6v74Z2704nJZQ2fxIOcxk5LnqieCAu2m/JSlt9w1/2cetQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\joelk\\OneDrive - FH Technikum Wien\\Dokumente\\BIF\\Sem_3\\SWE\\SWE1-PPB\\PPB\\PPB.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\joelk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512"
+    "C:\\Users\\joelk\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\joelk\\.nuget\\packages\\npgsql\\5.0.3\\npgsql.5.0.3.nupkg.sha512",
+    "C:\\Users\\joelk\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.6.0\\system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }
