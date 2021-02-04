@@ -8,7 +8,7 @@ namespace PPB
 {
     public class MultiMediaContent
     {
-        public int Id { get; set; }
+        public Guid ContentId { get; set; }
         public string Name { get; set; }
         string Filetype { get; set; }
         int Filesize { get; set; }
