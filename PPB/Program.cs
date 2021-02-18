@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace PPB
 {
@@ -6,8 +7,9 @@ namespace PPB
     {
         static void Main()
         {
-            PPB ppb = new PPB();
-            ppb.Run();
+            PPB.Run();
         }
     }
 }
+
+// Joel KUDIYIRICKAL (if19b226)
