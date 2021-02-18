@@ -6,43 +6,44 @@ using System.Linq;
 
 namespace PPB
 {
-    public class Scoreboard
+    public static class Scoreboard
     {
 
-        public List<User> GetUserswithMostWins()
+        public static List<User> GetUserswithMostWins()
         {
 
-            var users = DBHandler.GetallUsers();
+            var users = DBHandler.GetAllUsers();
             var sortedUsers = users.OrderByDescending(user => user.Wins).ToList();
              
             return sortedUsers;
         }
 
-        public List<User> GetUserswithMostLosses()
+        public static List<User> GetUserswithMostLosses()
         {
 
-            var users = DBHandler.GetallUsers();
+            var users = DBHandler.GetAllUsers();
             var sortedUsers = users.OrderByDescending(user => user.Losses).ToList();
 
             return sortedUsers;
         }
 
-        public List<User> GetUserswithWinsLossesRatio()
+        public static List<User> GetUserswithWinsLossesRatio()
         {
 
-            var users = DBHandler.GetallUsers();
+            var users = DBHandler.GetAllUsers();
             var sortedUsers = users.OrderByDescending(user => user.Wins/user.Losses).ToList();
 
             return sortedUsers;
         }
 
-        public List<User> GetUserswithHighestElo()
+        public static List<User> GetUserswithHighestTournamentPoints()
         {
 
-            var users = DBHandler.GetallUsers();
-            var sortedUsers = users.OrderByDescending(user => user.Elo).ToList();
+            var users = DBHandler.GetAllUsers();
+            var sortedUsers = users.OrderByDescending(user => user.TournamentPoints).ToList();
 
             return sortedUsers;
         }
+
     }
 }
