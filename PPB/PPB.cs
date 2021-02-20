@@ -402,6 +402,7 @@ namespace PPB
                     player.Draws++;
                     player.GamesPlayed++;
                     DBHandler.UpdateStats(player);
+                    player.IsBlocked = false; // unblock player after the tournament
                     continue;
                 }
                     
