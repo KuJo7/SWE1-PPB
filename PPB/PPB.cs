@@ -294,9 +294,9 @@ namespace PPB
                                 Actions.Add((Actions)Enum.Parse(typeof(Actions), ch.ToString())); // add new Actions
                             }
                             user.Actions = Actions; // replace old list with new list
-                            returncontent = JsonConvert.SerializeObject(user.Username + "  set actions");
+                            returncontent = JsonConvert.SerializeObject(user.Username + " set actions");
                             returnStatusCode = HttpStatusCode.OK;
-                            Console.WriteLine(user.Username + "  set actions");
+                            Console.WriteLine(user.Username + " set actions");
                         }
                         catch (Exception e)
                         {
