@@ -362,13 +362,10 @@ namespace PPB
                                     returnStatusCode = HttpStatusCode.OK;
                                     
                                     OnlineUsers.Add(user);
-                                    User Admin = OnlineUsers.FirstOrDefault(u => u.IsBlocked == false); // take first user who is not blocked
-                                    foreach (var player in OnlineUsers.Where(u => u.IsBlocked == false)) // Player with highest BattlePoints becomes Admin; replace admin with not blocked users only
-                                    {
-                                        if (player.BattlePoints > Admin.BattlePoints)
-                                            Admin = player;
-                                    }
-                                    currentAdmin = Admin; // replace old Admin with new Admin
+                                    var bestPlayers = OnlineUsers.OrderByDescending(u => u.BattlePoints).ToList(); // sort players after hightest battlepoints
+
+                                    if (bestPlayers[0].BattlePoints != bestPlayers[1].BattlePoints) // if the first two players have not equal battlepoints -> admin = new admin, else -> admin = oldadmin
+                                        currentAdmin = bestPlayers[0];
                                 }
                             }
                         }
@@ -401,6 +398,7 @@ namespace PPB
                 {
                     player.Draws++;
                     player.GamesPlayed++;
+                    player.IsBlocked = false;
                     DBHandler.UpdateStats(player);
                     continue;
                 }
