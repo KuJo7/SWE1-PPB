@@ -400,6 +400,7 @@ namespace PPB
                     player.GamesPlayed++;
                     player.IsBlocked = false;
                     DBHandler.UpdateStats(player);
+                    player.IsBlocked = false; // unblock player after the tournament
                     continue;
                 }
                     
