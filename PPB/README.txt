@@ -37,4 +37,4 @@ Time spent:
  	Ich habe ungefähr 20 Stunden für das Projekt investiert. 
 
 Link to git:
-	https://github.com/joelkudiyi/SWE1-PPB
+	https://github.com/KuJo7/SWE1-PPB
